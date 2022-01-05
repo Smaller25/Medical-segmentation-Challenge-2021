@@ -57,6 +57,9 @@ performance 향상을 위해 집중한 부분은 두 가지였는데, pretrained
 - 1 track : layer 3 & layer 5 (layer 5_weighted method)
 - 2 track : layer 3 model + layer 5 model (sequential model training / shared pretrained parameters)
 
+### 6) post processing
+otsu thresholding
+![image](https://user-images.githubusercontent.com/77380467/148228183-8d1a4df9-2334-4c76-8640-fff82ed880e9.png)
 
 ## 5. Reference 
 https://github.com/yingkaisha/keras-unet-collection/tree/main/keras_unet_collection
