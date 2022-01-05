@@ -38,13 +38,19 @@ https://maic.or.kr/competitions/8/infomation
 U-net은 biomedical image segmenation에서 상당히 좋은 성능을 보여줬던 모델 알고리즘으로, encoding 부분과 decoding 부분의 점진적인 downsampling & upsampling 구조를 가지고 있다. (O. Ronneberger, 2015)
 이 이후로도 여러가지 발전된 버전들이 나오기 시작했는데, (Unet+, Unet++, Efficient U-net, Attention U-net etc.), 본 프로젝트에서는 Biomedical Image challenge의 특성 상 U-net을 기반으로 시작하여 여러 버전의 발전된 U-net 모델 알고리즘을 파이프라인에 추가하는 방식을 택했다. 
 
-### 3) pretrained U-net
-당연하게도 첫 시도에선 점수가 좋지 않았다.
-performance 향상을 위해 집중한 부분은 두 가지였는데, pretrained model & 다양한 모델 알고리즘 적용 / loss function 변화 였다. pretrained model은 훨씬 좋았음.
+### 3) pretrained 
+performance 향상을 위해 집중한 부분은 두 가지였는데, pretrained model & 다양한 모델 알고리즘 적용 / loss function 변화 였다. pretrained model은 성능 향상을 확인할 수 있었다. 데이터 수가 부족했던 것으로 판단.
+
+![image](https://user-images.githubusercontent.com/77380467/148227856-36f1893c-0fba-4a4b-b63b-62beca06f62b.png)
+![image](https://user-images.githubusercontent.com/77380467/148227899-4ea2a22c-400b-4673-9195-0c0eca4d982c.png)
+![image](https://user-images.githubusercontent.com/77380467/148227922-6debdd9a-2477-41ad-83ed-f6cfa8bc1002.png)
+
 
 ### 4) Loss function / optimizer
-- combined [BinaryCrossentropy +Dice coefficient] 
-- Adam 
+- combined [BinaryCrossentropy / Dice coefficient / focla loss]
+- ![image](https://user-images.githubusercontent.com/77380467/148227985-dbf84621-d14a-4f79-8ad1-daf84bd342d9.png)
+
+- Adam etc.
 
 ### 5) model pipeline structure (trial)
 - 1 track : layer 3 & layer 5 (no weight)
