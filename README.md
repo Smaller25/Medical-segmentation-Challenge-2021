@@ -42,7 +42,9 @@ U-net은 biomedical image segmenation에서 상당히 좋은 성능을 보여줬
 당연하게도 첫 시도에선 점수가 좋지 않았다.
 performance 향상을 위해 집중한 부분은 두 가지였는데, pretrained model & 다양한 모델 알고리즘 적용 / loss function 변화 였다. pretrained model은 훨씬 좋았음.
 
-### 4) Loss function : combined [BinaryCrossentropy +Dice coefficient] : custom function
+### 4) Loss function / optimizer
+- combined [BinaryCrossentropy +Dice coefficient] 
+- Adam 
 
 ### 5) model pipeline structure (trial)
 - 1 track : layer 3 & layer 5 (no weight)
