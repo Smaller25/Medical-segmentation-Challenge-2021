@@ -19,5 +19,15 @@ https://maic.or.kr/competitions/8/infomation
 
 ### 2) 최종 순위
 : 예선 4위 / 본선 7위
+![image](https://user-images.githubusercontent.com/77380467/148221789-26491f76-46b4-4fa1-8178-ec7ca5a9e09a.png)
+![image](https://user-images.githubusercontent.com/77380467/148221925-5ff6e01a-d0a1-4774-8ba5-5b23d6f82d1a.png)
 
 ### 3) 결과 
+![image](https://user-images.githubusercontent.com/77380467/148221995-ac84a83d-0dc4-4d45-870f-ee1c19ed0469.png)
+-------
+![image](https://user-images.githubusercontent.com/77380467/148222022-83409842-2a7f-4e5f-bd93-ca4c084b8540.png)
+
+
+## 4. Applied Tech
+### 1) U-net / Attention U-net 
+### 2) Loss function : Dice coef
