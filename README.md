@@ -1,5 +1,5 @@
 # Medical-segmentation-Challenge-2021
-https://maic.or.kr/competitions/8/infomation 
+https://maic.or.kr/competitions/8/infomation   
 
 ## 1. Challenge Image
 ![image](https://user-images.githubusercontent.com/77380467/148221025-6674aaf1-d382-4c1b-95e5-a4456c31a18b.png)
